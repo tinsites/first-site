@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Site - Modern Web Experience</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo"><i class="fa-solid fa-cube"></i> First<span>Site</span></a>
+            <nav class="nav" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link btn-nav">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge"><i class="fa-solid fa-sparkles"></i> Welcome</span>
+                <h1>Build Your Digital Presence with <span>Confidence</span></h1>
+                <p>We craft stunning, lightning-fast, and responsive web experiences tailored to elevate your brand.</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#portfolio" class="btn btn-outline">View Work</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-graphic"><i class="fa-solid fa-laptop-code"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Us</span>
+                <h2>Driven by Innovation & Design</h2>
+                <p>Dedicated team passionate about building digital solutions that matter.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card"><div class="icon-box"><i class="fa-solid fa-bullseye"></i></div><h3>Mission</h3><p>Empower businesses with web technologies.</p></div>
+                <div class="about-card"><div class="icon-box"><i class="fa-solid fa-eye"></i></div><h3>Vision</h3><p>Set global standards for digital craft.</p></div>
+                <div class="about-card"><div class="icon-box"><i class="fa-solid fa-heart"></i></div><h3>Values</h3><p>Integrity, innovation, and client success.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Services</span>
+                <h2>What We Do</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card"><div class="service-icon"><i class="fa-solid fa-code"></i></div><h3>Web Development</h3><p>Custom, scalable apps.</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fa-solid fa-paint-brush"></i></div><h3>UI/UX Design</h3><p>Intuitive user interfaces.</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fa-solid fa-chart-line"></i></div><h3>Digital Strategy</h3><p>Data-driven growth.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2>Featured Projects</h2>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item"><div class="portfolio-img bg-gradient-1"><i class="fa-solid fa-bag-shopping"></i></div><h3>LuxeBrand</h3></div>
+                <div class="portfolio-item"><div class="portfolio-img bg-gradient-2"><i class="fa-solid fa-chart-pie"></i></div><h3>MetricsPro</h3></div>
+                <div class="portfolio-item"><div class="portfolio-img bg-gradient-3"><i class="fa-solid fa-graduation-cap"></i></div><h3>LearnHub</h3></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2>Let's Build Something Great</h2>
+            </div>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group"><input type="text" id="name" required placeholder="Your Name"></div>
+                <div class="form-group"><input type="email" id="email" required placeholder="Your Email"></div>
+                <div class="form-group"><textarea id="message" rows="3" required placeholder="Your Message"></textarea></div>
+                <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                <div id="form-message" class="form-message"></div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container"><p>&copy; <span id="current-year"></span> FirstSite. All rights reserved.</p></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
